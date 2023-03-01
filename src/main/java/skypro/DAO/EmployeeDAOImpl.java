@@ -1,12 +1,12 @@
 package skypro.DAO;
 
+import net.bytebuddy.asm.Advice;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
-import skypro.empl.Employee;
+import skypro.entity.Employee;
 
 import java.util.List;
-
 public class EmployeeDAOImpl implements EmployeeDAO {
     private SessionFactory sessionFactory;
 

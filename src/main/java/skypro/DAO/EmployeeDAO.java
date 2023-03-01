@@ -1,6 +1,6 @@
 package skypro.DAO;
 
-import skypro.empl.Employee;
+import skypro.entity.Employee;
 
 import java.util.List;
 

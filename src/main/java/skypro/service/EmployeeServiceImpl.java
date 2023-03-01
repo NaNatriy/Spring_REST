@@ -1,7 +1,7 @@
 package skypro.service;
 
 import skypro.DAO.EmployeeDAO;
-import skypro.empl.Employee;
+import skypro.entity.Employee;
 import skypro.exception.EmployeeException;
 
 import javax.transaction.Transactional;

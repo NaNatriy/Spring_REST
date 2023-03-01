@@ -1,18 +1,21 @@
-package skypro.empl;
+package skypro.entity;
 
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "person")
+@Table(name = "employee")
 public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
+    private Integer id;
     @Column(name = "name")
     private String name;
+
+    @Column(name = "department")
+    private String department;
 
     @Column(name = "salary")
     private int salary;

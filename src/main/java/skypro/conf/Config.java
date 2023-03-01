@@ -38,11 +38,12 @@ public class Config {
     public LocalSessionFactoryBean getSessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(getDataSource());
-        sessionFactory.setPackagesToScan("skypro.employee");
+        sessionFactory.setPackagesToScan("skypro.entity");
 
         Properties properties = new Properties();
         properties.setProperty("dialect", "org.hibernate.dialect.PostgreSQLDialect");
         properties.setProperty("show_sql", "true");
+        properties.setProperty("spring.jpa.hibernate.ddl-auto", "create-drop");
 
         sessionFactory.setHibernateProperties(properties);
 
